@@ -193,8 +193,7 @@
 				TargetAttributes = {
 					D63550BF1E51AA4100C0EE3D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Q47BC9T672;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D63550D31E51AA4100C0EE3D = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -415,7 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q47BC9T672;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = booklending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklending;
@@ -428,7 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q47BC9T672;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = booklending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklending;
