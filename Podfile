@@ -10,11 +10,14 @@ target 'booklending' do
   target 'booklendingTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
 
   target 'booklendingUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'KIF'
   end
 
 end
