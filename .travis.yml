@@ -2,6 +2,7 @@ language: objective-c
 cache: cocoapods
 osx_image: xcode8.2.1
 before_install:
+  - rvm install ruby-2.4.0
   - rvm --default use ruby-2.4.0
   - bundle install
 script:
