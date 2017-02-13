@@ -19,12 +19,12 @@ platform :ios do
   before_all do
     ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
     cocoapods
-    
   end
 
   desc "Runs all the tests"
   lane :test do
     scan(
+      platform: ios
       scheme: "booklending",
       slack_url: ENV["SLACK_URL"],
       output_style: "rspec",
