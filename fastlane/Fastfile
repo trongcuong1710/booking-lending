@@ -24,7 +24,6 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     scan(
-      platform: ios
       scheme: "booklending",
       slack_url: ENV["SLACK_URL"],
       output_style: "rspec",
