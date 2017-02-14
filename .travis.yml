@@ -1,16 +1,21 @@
 language: objective-c
 cache: cocoapods
 osx_image: xcode8.2
-before_install:
-- rvm install ruby-2.4.0
-- rvm --default use ruby-2.4.0
-- bundle install
-script:
-- fastlane test
+
 notifications:
   slack:
-    secure: Dj+Mh/I9ChhFA6BxoTgyqI04Mjokkbxuzc6rYUXyww8+pGCSsouGtBwcerRZ1lITxYWnD2Akw4qSjDfK4UVxynCZbu/b0vTYql0vmV4b8+/IZTMl4x4qLnejBMt/Us4z7hQ2Te2ZxdbIhNnuEfC7mxLwgZjTx4B0XEWL0DaYceV10PEeERn98aBPbXo8Mx/gJj+Mah5XNDuiFdRNFeISY1XN1PDWA4wEu6xt2zVv20VWWH9XlQtFKU155fUApVUf5jw+ER9Vi+F0J7PerDuLWIY8nXvyMCf58sr3z+xmibF2IhgAQTODpv4DWlQaEr39UEiLe9eiblQMLCAMSu6ErAE/KZvSGJVVJ/P5JvC6fp3jEu1DHYPTaWK/SfOGaQcT1PckzMkoyx6ES60HXLViKtneC9diGCODPVtVItLBPuIc58eVyKl+VPzu4b9BXzvAN4QazikprHQOsU9FJhQfttl8ywSbHTGT3qk7urMQpqxmdsXZu/svJbPbSuQrN19fHMArT7q4daT4rMWgokOOhKm+PVJ4V7FsHGrAGXCHPGFyoWWA9/29aVYvh8O8WLCPj47bRPiA0hNBmM6vygX+oprxM3/3lX0Ow9aU6IdYyDhbVcTk0JGVmAMtnJPqdrpDCoat+V/FE4Ocd1KRy8d0wF9qc6SEC5KfkaaEksRgR20=
+    rooms:
+      - secure: Dj+Mh/I9ChhFA6BxoTgyqI04Mjokkbxuzc6rYUXyww8+pGCSsouGtBwcerRZ1lITxYWnD2Akw4qSjDfK4UVxynCZbu/b0vTYql0vmV4b8+/IZTMl4x4qLnejBMt/Us4z7hQ2Te2ZxdbIhNnuEfC7mxLwgZjTx4B0XEWL0DaYceV10PEeERn98aBPbXo8Mx/gJj+Mah5XNDuiFdRNFeISY1XN1PDWA4wEu6xt2zVv20VWWH9XlQtFKU155fUApVUf5jw+ER9Vi+F0J7PerDuLWIY8nXvyMCf58sr3z+xmibF2IhgAQTODpv4DWlQaEr39UEiLe9eiblQMLCAMSu6ErAE/KZvSGJVVJ/P5JvC6fp3jEu1DHYPTaWK/SfOGaQcT1PckzMkoyx6ES60HXLViKtneC9diGCODPVtVItLBPuIc58eVyKl+VPzu4b9BXzvAN4QazikprHQOsU9FJhQfttl8ywSbHTGT3qk7urMQpqxmdsXZu/svJbPbSuQrN19fHMArT7q4daT4rMWgokOOhKm+PVJ4V7FsHGrAGXCHPGFyoWWA9/29aVYvh8O8WLCPj47bRPiA0hNBmM6vygX+oprxM3/3lX0Ow9aU6IdYyDhbVcTk0JGVmAMtnJPqdrpDCoat+V/FE4Ocd1KRy8d0wF9qc6SEC5KfkaaEksRgR20=
     template:
       - "%{repository_name} (%{commit}) %{message}"
       - "Build %{build_number}"
       - "Detail at %{build_url}"
+
+
+before_install:
+- rvm install ruby-2.4.0
+- rvm --default use ruby-2.4.0
+- bundle install
+
+script:
+- fastlane test
