@@ -17,6 +17,8 @@
 		D63550CE1E51AA4100C0EE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63550CC1E51AA4100C0EE3D /* LaunchScreen.storyboard */; };
 		D63550D91E51AA4100C0EE3D /* booklendingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63550D81E51AA4100C0EE3D /* booklendingTests.swift */; };
 		D63550E41E51AA4100C0EE3D /* booklendingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63550E31E51AA4100C0EE3D /* booklendingUITests.swift */; };
+		D63550F71E5314B900C0EE3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D63550F61E5314B900C0EE3D /* GoogleService-Info.plist */; };
+		D63550FF1E5315E400C0EE3D /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63550FE1E5315E400C0EE3D /* RootController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		D63550DF1E51AA4100C0EE3D /* booklendingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = booklendingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63550E31E51AA4100C0EE3D /* booklendingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = booklendingUITests.swift; sourceTree = "<group>"; };
 		D63550E51E51AA4100C0EE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D63550F61E5314B900C0EE3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D63550F91E53156300C0EE3D /* booklending-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "booklending-Bridging-Header.h"; sourceTree = "<group>"; };
+		D63550FE1E5315E400C0EE3D /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		E11F57B516565FAB79D6EA00 /* Pods-booklendingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booklendingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-booklendingTests/Pods-booklendingTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED7C7B36F71D97A72880F6B0 /* Pods-booklending.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booklending.debug.xcconfig"; path = "Pods/Target Support Files/Pods-booklending/Pods-booklending.debug.xcconfig"; sourceTree = "<group>"; };
 		F97F972691296FBCBFE99BAA /* Pods-booklendingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-booklendingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-booklendingTests/Pods-booklendingTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,12 +142,15 @@
 		D63550C21E51AA4100C0EE3D /* booklending */ = {
 			isa = PBXGroup;
 			children = (
+				D63550FD1E5315B900C0EE3D /* ViewControllers */,
+				D63550F61E5314B900C0EE3D /* GoogleService-Info.plist */,
 				D63550C31E51AA4100C0EE3D /* AppDelegate.swift */,
 				D63550C51E51AA4100C0EE3D /* ViewController.swift */,
 				D63550C71E51AA4100C0EE3D /* Main.storyboard */,
 				D63550CA1E51AA4100C0EE3D /* Assets.xcassets */,
 				D63550CC1E51AA4100C0EE3D /* LaunchScreen.storyboard */,
 				D63550CF1E51AA4100C0EE3D /* Info.plist */,
+				D63550F91E53156300C0EE3D /* booklending-Bridging-Header.h */,
 			);
 			path = booklending;
 			sourceTree = "<group>";
@@ -163,6 +171,14 @@
 				D63550E51E51AA4100C0EE3D /* Info.plist */,
 			);
 			path = booklendingUITests;
+			sourceTree = "<group>";
+		};
+		D63550FD1E5315B900C0EE3D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D63550FE1E5315E400C0EE3D /* RootController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +258,7 @@
 				TargetAttributes = {
 					D63550BF1E51AA4100C0EE3D = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 					D63550D31E51AA4100C0EE3D = {
@@ -284,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63550CE1E51AA4100C0EE3D /* LaunchScreen.storyboard in Resources */,
+				D63550F71E5314B900C0EE3D /* GoogleService-Info.plist in Resources */,
 				D63550CB1E51AA4100C0EE3D /* Assets.xcassets in Resources */,
 				D63550C91E51AA4100C0EE3D /* Main.storyboard in Resources */,
 			);
@@ -450,6 +468,7 @@
 			files = (
 				D63550C61E51AA4100C0EE3D /* ViewController.swift in Sources */,
 				D63550C41E51AA4100C0EE3D /* AppDelegate.swift in Sources */,
+				D63550FF1E5315E400C0EE3D /* RootController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,11 +621,14 @@
 			baseConfigurationReference = ED7C7B36F71D97A72880F6B0 /* Pods-booklending.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = booklending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklending;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "booklending/booklending-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -616,11 +638,13 @@
 			baseConfigurationReference = 6B4FCD6F738D9D901649BA0F /* Pods-booklending.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = booklending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklending;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "booklending/booklending-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -706,6 +730,7 @@
 				D63550EA1E51AA4100C0EE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D63550EB1E51AA4100C0EE3D /* Build configuration list for PBXNativeTarget "booklendingTests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +739,7 @@
 				D63550ED1E51AA4100C0EE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D63550EE1E51AA4100C0EE3D /* Build configuration list for PBXNativeTarget "booklendingUITests" */ = {
 			isa = XCConfigurationList;
@@ -722,6 +748,7 @@
 				D63550F01E51AA4100C0EE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
