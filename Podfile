@@ -6,6 +6,8 @@ target 'booklending' do
   use_frameworks!
 
   pod 'Google/SignIn'
+  pod 'Swinject', '2.0.0'
+  pod 'PromiseKit', '~> 4.0'
 
   target 'booklendingTests' do
     inherit! :search_paths

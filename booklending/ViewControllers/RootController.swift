@@ -12,13 +12,3 @@ class RootController: UINavigationController {
         
     }
 }
-
-extension RootController {
-    private func configGoogleSignIn() {
-        
-    }
-}
-
-//extension RootController: GIDSignInDelegate {
-//    
-//}
