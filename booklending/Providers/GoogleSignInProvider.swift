@@ -17,4 +17,8 @@ struct GoogleSignInProvider: GoogleSignInProviderProtocol {
     func signIn() {
         GIDSignIn.sharedInstance().signIn()
     }
+    
+    func signOut() {
+        GIDSignIn.sharedInstance().signOut()
+    }
 }

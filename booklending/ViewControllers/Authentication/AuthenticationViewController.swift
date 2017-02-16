@@ -40,13 +40,10 @@ class AuthenticationViewController: UIViewController {
 
 extension AuthenticationViewController: AuthenticationViewProtocol {
     func show(error: Error) {
-        UIAlertController.showAlert(in: self,
-                                    withTitle: "Sign In Failed!",
-                                    message: error.localizedDescription,
-                                    cancelButtonTitle: "OK",
-                                    destructiveButtonTitle: nil,
-                                    otherButtonTitles: nil,
-                                    tap: nil)
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        let alertController = UIAlertController(title: "Sign In Failed!", message: error.localizedDescription, preferredStyle: .alert)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     func authenticationSucceed(user: User) {

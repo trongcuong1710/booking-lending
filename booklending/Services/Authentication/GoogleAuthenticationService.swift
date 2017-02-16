@@ -7,7 +7,7 @@ import Foundation
 import PromiseKit
 
 class GoogleAuthenticationService: NSObject {
-    fileprivate let promise = Promise<User>.pending()
+    fileprivate var promise: (promise: Promise<User>, fulfill: (User) -> Void, reject: (Error) -> Void)!
     fileprivate var provider: GoogleSignInProviderProtocol
     
     init(provider: GoogleSignInProviderProtocol = GoogleSignInProvider()) {
@@ -22,6 +22,7 @@ class GoogleAuthenticationService: NSObject {
 
 extension GoogleAuthenticationService: AuthenticationService {
     func signIn() -> Promise<User> {
+        self.promise = Promise<User>.pending()
         self.provider.signIn()
         return self.promise.promise
     }
@@ -33,18 +34,22 @@ extension GoogleAuthenticationService: GIDSignInDelegate {
               withError error: Error!) {
         if let error = error {
             self.promise.reject(error)
+            self.provider.signOut()
             return
         }
         
         let email = user.profile.email
         let user = User(email: email!)
         self.promise.fulfill(user)
+        
     }
 }
 
 extension GoogleAuthenticationService: GIDSignInUIDelegate {
     func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
-        UIApplication.shared.delegate?.window??.rootViewController?.present(viewController, animated: true, completion: nil)
+        let rootController = UIApplication.shared.delegate!.window!!.rootViewController! as! RootController
+        let currentController = rootController.viewControllers.last!
+        currentController.present(viewController, animated: true, completion: nil)
     }
     
     func sign(_ signIn: GIDSignIn!, dismiss viewController: UIViewController!) {
