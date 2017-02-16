@@ -13,14 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.configGoogleServices()
         
+        self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let controller = UIViewController()
-        self.window? = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = controller
+        let authenticationController = AuthenticationViewController()
+        let rootController = RootController(rootViewController: authenticationController)
         
+        self.window?.rootViewController = rootController
         self.window?.makeKeyAndVisible()
+        
+        self.configGoogleServices()
         
         return true
     }

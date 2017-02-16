@@ -58,6 +58,7 @@ PODS:
     - PromiseKit/CorePromise
   - Quick (1.0.0)
   - Swinject (2.0.0)
+  - UIAlertController+Blocks (0.9.2)
 
 DEPENDENCIES:
   - Google/SignIn
@@ -66,6 +67,7 @@ DEPENDENCIES:
   - PromiseKit (~> 4.0)
   - Quick
   - Swinject (= 2.0.0)
+  - UIAlertController+Blocks
 
 SPEC CHECKSUMS:
   FirebaseAnalytics: 9c67af0ebeb8d2146c9b4ea2616439affa947b58
@@ -84,7 +86,8 @@ SPEC CHECKSUMS:
   PromiseKit: 56baec63efa89210c023260879435a5a6b3bff00
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
   Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
+  UIAlertController+Blocks: 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
 
-PODFILE CHECKSUM: d43d39a955370ff4a341ffcc4f8f5ab8388b885a
+PODFILE CHECKSUM: 83e97163ecc1ee80fbd4a7c38e6837c23e1c17ff
 
 COCOAPODS: 1.1.1

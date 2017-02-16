@@ -8,6 +8,7 @@ target 'booklending' do
   pod 'Google/SignIn'
   pod 'Swinject', '2.0.0'
   pod 'PromiseKit', '~> 4.0'
+  pod 'UIAlertController+Blocks'
 
   target 'booklendingTests' do
     inherit! :search_paths
