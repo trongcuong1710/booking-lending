@@ -16,6 +16,7 @@ class GoogleAuthenticationService: NSObject {
         super.init()
         
         self.provider.config(delegate: self)
+        self.provider.config(uiDelegate: self)
     }
 }
 
@@ -38,5 +39,15 @@ extension GoogleAuthenticationService: GIDSignInDelegate {
         let email = user.profile.email
         let user = User(email: email!)
         self.promise.fulfill(user)
+    }
+}
+
+extension GoogleAuthenticationService: GIDSignInUIDelegate {
+    func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
+        UIApplication.shared.delegate?.window??.rootViewController?.present(viewController, animated: true, completion: nil)
+    }
+    
+    func sign(_ signIn: GIDSignIn!, dismiss viewController: UIViewController!) {
+        viewController.dismiss(animated: true, completion: nil)
     }
 }

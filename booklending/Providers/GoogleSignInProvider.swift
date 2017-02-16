@@ -10,6 +10,10 @@ struct GoogleSignInProvider: GoogleSignInProviderProtocol {
         GIDSignIn.sharedInstance().delegate = delegate
     }
     
+    func config(uiDelegate: GIDSignInUIDelegate) {
+        GIDSignIn.sharedInstance().uiDelegate = uiDelegate
+    }
+    
     func signIn() {
         GIDSignIn.sharedInstance().signIn()
     }
