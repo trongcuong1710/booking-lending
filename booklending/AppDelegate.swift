@@ -16,8 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let authenticationController = AuthenticationViewController()
-        let rootController = RootController(rootViewController: authenticationController)
+        var viewController: UIViewController
+        
+        if let _ = UserRepository().getCurrentUser() {
+            viewController = BooksListViewController()
+        } else {
+            viewController = AuthenticationViewController()
+        }
+        
+        let rootController = RootController(rootViewController: viewController)
         
         self.window?.rootViewController = rootController
         self.window?.makeKeyAndVisible()

@@ -50,12 +50,7 @@ extension AuthenticationViewController: AuthenticationViewProtocol {
     }
     
     func authenticationSucceed(user: User) {
-        UIAlertController.showAlert(in: self,
-                                    withTitle: "Sign In Succeed!",
-                                    message: "Welcome to LendBorrow \(user.email)",
-                                    cancelButtonTitle: "OK",
-                                    destructiveButtonTitle: nil,
-                                    otherButtonTitles: nil,
-                                    tap: nil)
+        let booksListController = BooksListViewController()
+        self.navigationController?.pushViewController(booksListController, animated: true)
     }
 }

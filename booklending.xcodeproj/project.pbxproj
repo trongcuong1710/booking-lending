@@ -37,6 +37,8 @@
 		D6C5EB651E560C4800583B90 /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5EB641E560C4800583B90 /* MockUserRepository.swift */; };
 		D6C5EB681E560EDD00583B90 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5EB661E560EDD00583B90 /* AuthenticationViewController.swift */; };
 		D6C5EB691E560EDD00583B90 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C5EB671E560EDD00583B90 /* AuthenticationViewController.xib */; };
+		D6C5EB6D1E561C5800583B90 /* BooksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5EB6B1E561C5800583B90 /* BooksListViewController.swift */; };
+		D6C5EB6E1E561C5800583B90 /* BooksListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C5EB6C1E561C5800583B90 /* BooksListViewController.xib */; };
 		D6F069A21E559C73002EB412 /* MockGIDGoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F069A11E559C73002EB412 /* MockGIDGoogleUser.swift */; };
 		D6F069A41E559C91002EB412 /* MockGIDProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F069A31E559C91002EB412 /* MockGIDProfileData.swift */; };
 		D6F069A81E559D2B002EB412 /* MockGoogleSignInProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F069A71E559D2B002EB412 /* MockGoogleSignInProvider.swift */; };
@@ -107,6 +109,8 @@
 		D6C5EB641E560C4800583B90 /* MockUserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
 		D6C5EB661E560EDD00583B90 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		D6C5EB671E560EDD00583B90 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
+		D6C5EB6B1E561C5800583B90 /* BooksListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksListViewController.swift; sourceTree = "<group>"; };
+		D6C5EB6C1E561C5800583B90 /* BooksListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BooksListViewController.xib; sourceTree = "<group>"; };
 		D6F069A11E559C73002EB412 /* MockGIDGoogleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGIDGoogleUser.swift; sourceTree = "<group>"; };
 		D6F069A31E559C91002EB412 /* MockGIDProfileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGIDProfileData.swift; sourceTree = "<group>"; };
 		D6F069A71E559D2B002EB412 /* MockGoogleSignInProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGoogleSignInProvider.swift; sourceTree = "<group>"; };
@@ -305,6 +309,7 @@
 		D63550FD1E5315B900C0EE3D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D6C5EB6A1E561C4200583B90 /* Books */,
 				D6F069AC1E55AD03002EB412 /* Authentication */,
 				D63550FE1E5315E400C0EE3D /* RootController.swift */,
 			);
@@ -380,6 +385,15 @@
 				D6C5EB641E560C4800583B90 /* MockUserRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D6C5EB6A1E561C4200583B90 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5EB6B1E561C5800583B90 /* BooksListViewController.swift */,
+				D6C5EB6C1E561C5800583B90 /* BooksListViewController.xib */,
+			);
+			path = Books;
 			sourceTree = "<group>";
 		};
 		D6F0699F1E559C4B002EB412 /* Mocks */ = {
@@ -592,6 +606,7 @@
 				D63550CE1E51AA4100C0EE3D /* LaunchScreen.storyboard in Resources */,
 				D63550F71E5314B900C0EE3D /* GoogleService-Info.plist in Resources */,
 				D63550CB1E51AA4100C0EE3D /* Assets.xcassets in Resources */,
+				D6C5EB6E1E561C5800583B90 /* BooksListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +782,7 @@
 				D6C5EB681E560EDD00583B90 /* AuthenticationViewController.swift in Sources */,
 				D6F069B11E55AD70002EB412 /* AuthenticationPresenterProtocol.swift in Sources */,
 				D63551041E53FF6D00C0EE3D /* UserManager.swift in Sources */,
+				D6C5EB6D1E561C5800583B90 /* BooksListViewController.swift in Sources */,
 				D62D4DC01E5564F3004D0486 /* AuthenticationOutput.swift in Sources */,
 				D63550FF1E5315E400C0EE3D /* RootController.swift in Sources */,
 				D62D4DB61E544E39004D0486 /* GoogleAuthenticationService.swift in Sources */,
