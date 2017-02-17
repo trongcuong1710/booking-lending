@@ -16,7 +16,7 @@ class GoogleAuthenticationServiceSpec: QuickSpec {
                 it("should fulfill with user model") {
                     let service = GoogleAuthenticationService(provider: MockGoogleSignInProvider(resultType: .Success))
                     service.signIn().then { user in
-                        expect(user.email).to(equal("trongcuong@siliconstraits.com"))
+                        expect(user.email.value).to(equal("trongcuong@siliconstraits.com"))
                     }.catch { error in
                         fail("Case sign in success failed. Expect to fulfill with user model but throw error instead.")
                     }

@@ -35,7 +35,7 @@ class UserDefaults_CustomObjectSpecs: QuickSpec {
                     
                     let decodedObject = NSKeyedUnarchiver.unarchiveObject(with: encodedData as! Data)
                     
-                    expect((decodedObject as? User)?.email).to(equal(user.email))
+                    expect((decodedObject as? User)?.email.value).to(equal(user.email.value))
                 }
             }
         }
@@ -55,7 +55,7 @@ class UserDefaults_CustomObjectSpecs: QuickSpec {
                     let customObject = UserDefaults.standard.customObject(forKey: self.key)
                     
                     expect(customObject).toNot(beNil())
-                    expect((customObject as? User)?.email).to(equal(user.email))
+                    expect((customObject as? User)?.email.value).to(equal(user.email.value))
                 }
             }
         }

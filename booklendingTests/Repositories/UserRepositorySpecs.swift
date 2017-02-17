@@ -28,7 +28,7 @@ class UserRepositorySpecs: QuickSpec {
                 
                 let customObject = NSKeyedUnarchiver.unarchiveObject(with: encodedData)
                 
-                expect((customObject as? User)?.email).to(equal(user.email))
+                expect((customObject as? User)?.email.value).to(equal(user.email.value))
             }
         }
         
@@ -59,7 +59,7 @@ class UserRepositorySpecs: QuickSpec {
                     let currentUser = self.repository.getCurrentUser()
                     
                     expect(currentUser).toNot(beNil())
-                    expect(currentUser?.email).to(equal(user.email))
+                    expect(currentUser?.email.value).to(equal(user.email.value))
                 }
             }
         }

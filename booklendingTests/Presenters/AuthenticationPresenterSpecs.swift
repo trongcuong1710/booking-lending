@@ -21,7 +21,7 @@ class AuthenticationPresenterSpecs: QuickSpec {
                     
                     expect(view.error).to(beNil())
                     expect(view.user).toNot(beNil())
-                    expect(view.user?.email).to(equal("trongcuong@siliconstraits.com"))
+                    expect(view.user?.email.value).to(equal("trongcuong@siliconstraits.com"))
                 }
             }
             

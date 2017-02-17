@@ -39,6 +39,8 @@
 		D6C5EB691E560EDD00583B90 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C5EB671E560EDD00583B90 /* AuthenticationViewController.xib */; };
 		D6C5EB6D1E561C5800583B90 /* BooksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5EB6B1E561C5800583B90 /* BooksListViewController.swift */; };
 		D6C5EB6E1E561C5800583B90 /* BooksListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C5EB6C1E561C5800583B90 /* BooksListViewController.xib */; };
+		D6C5EB701E56A1BC00583B90 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5EB6F1E56A1BC00583B90 /* Email.swift */; };
+		D6C5EB731E56A37800583B90 /* EmailSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5EB721E56A37800583B90 /* EmailSpecs.swift */; };
 		D6F069A21E559C73002EB412 /* MockGIDGoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F069A11E559C73002EB412 /* MockGIDGoogleUser.swift */; };
 		D6F069A41E559C91002EB412 /* MockGIDProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F069A31E559C91002EB412 /* MockGIDProfileData.swift */; };
 		D6F069A81E559D2B002EB412 /* MockGoogleSignInProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F069A71E559D2B002EB412 /* MockGoogleSignInProvider.swift */; };
@@ -111,6 +113,8 @@
 		D6C5EB671E560EDD00583B90 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
 		D6C5EB6B1E561C5800583B90 /* BooksListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksListViewController.swift; sourceTree = "<group>"; };
 		D6C5EB6C1E561C5800583B90 /* BooksListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BooksListViewController.xib; sourceTree = "<group>"; };
+		D6C5EB6F1E56A1BC00583B90 /* Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		D6C5EB721E56A37800583B90 /* EmailSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSpecs.swift; sourceTree = "<group>"; };
 		D6F069A11E559C73002EB412 /* MockGIDGoogleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGIDGoogleUser.swift; sourceTree = "<group>"; };
 		D6F069A31E559C91002EB412 /* MockGIDProfileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGIDProfileData.swift; sourceTree = "<group>"; };
 		D6F069A71E559D2B002EB412 /* MockGoogleSignInProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGoogleSignInProvider.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 			children = (
 				D62D4DB01E544C05004D0486 /* User.swift */,
 				D62D4DB31E544D50004D0486 /* SignIn.swift */,
+				D6C5EB6F1E56A1BC00583B90 /* Email.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 		D6C5EB531E55DE8100583B90 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D6C5EB711E56A34400583B90 /* Model */,
 				D6C5EB601E56036C00583B90 /* Extensions */,
 				D6C5EB591E55FBB700583B90 /* Repositories */,
 				D6F069A91E55A3A4002EB412 /* Interactors */,
@@ -394,6 +400,15 @@
 				D6C5EB6C1E561C5800583B90 /* BooksListViewController.xib */,
 			);
 			path = Books;
+			sourceTree = "<group>";
+		};
+		D6C5EB711E56A34400583B90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5EB721E56A37800583B90 /* EmailSpecs.swift */,
+			);
+			name = Model;
+			path = Email;
 			sourceTree = "<group>";
 		};
 		D6F0699F1E559C4B002EB412 /* Mocks */ = {
@@ -783,6 +798,7 @@
 				D6F069B11E55AD70002EB412 /* AuthenticationPresenterProtocol.swift in Sources */,
 				D63551041E53FF6D00C0EE3D /* UserManager.swift in Sources */,
 				D6C5EB6D1E561C5800583B90 /* BooksListViewController.swift in Sources */,
+				D6C5EB701E56A1BC00583B90 /* Email.swift in Sources */,
 				D62D4DC01E5564F3004D0486 /* AuthenticationOutput.swift in Sources */,
 				D63550FF1E5315E400C0EE3D /* RootController.swift in Sources */,
 				D62D4DB61E544E39004D0486 /* GoogleAuthenticationService.swift in Sources */,
@@ -803,6 +819,7 @@
 				D6F069B91E55B2AC002EB412 /* MockAuthenticationInteractor.swift in Sources */,
 				D6F069A41E559C91002EB412 /* MockGIDProfileData.swift in Sources */,
 				D6F069AB1E55A3BF002EB412 /* AuthenticationInteractorSpecs.swift in Sources */,
+				D6C5EB731E56A37800583B90 /* EmailSpecs.swift in Sources */,
 				D6C5EB621E56038400583B90 /* UserDefaults+CustomObjectSpecs.swift in Sources */,
 				D6F069B61E55B22A002EB412 /* AuthenticationPresenterSpecs.swift in Sources */,
 				D62D4DD11E556EE9004D0486 /* GoogleAuthenticationServiceSpecs.swift in Sources */,

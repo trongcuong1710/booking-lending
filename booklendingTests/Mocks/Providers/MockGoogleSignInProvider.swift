@@ -23,6 +23,8 @@ class MockGoogleSignInProvider: GoogleSignInProviderProtocol {
         self.delegate = delegate
     }
     
+    func config(uiDelegate: GIDSignInUIDelegate) {}
+    
     func signIn() {
         switch self.resultType {
         case .Success:
@@ -32,6 +34,8 @@ class MockGoogleSignInProvider: GoogleSignInProviderProtocol {
             self.authenticationFailed()
         }
     }
+    
+    func signOut() {}
     
     private func authenticationSucceed() {
         self.delegate?.sign(GIDSignIn.sharedInstance(), didSignInFor: MockGIDGoogleUser(), withError: nil)
