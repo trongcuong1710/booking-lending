@@ -1,5 +1,7 @@
 language: objective-c
-cache: cocoapods
+cache: 
+  - bundler
+  - cocoapods
 osx_image: xcode8.2
 
 notifications:
@@ -13,10 +15,10 @@ notifications:
 
 
 before_install:
-- rvm install ruby-2.4.0
-- rvm --default use ruby-2.4.0
+#- rvm install ruby-2.4.0
+- rvm --default use ruby-2.3.0
 - bundle install
-- pod repo update
+#- pod repo update
 
 script:
 - fastlane test

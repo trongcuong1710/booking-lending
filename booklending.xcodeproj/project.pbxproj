@@ -41,6 +41,7 @@
 		D6C5EB6E1E561C5800583B90 /* BooksListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C5EB6C1E561C5800583B90 /* BooksListViewController.xib */; };
 		D6C5EB701E56A1BC00583B90 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5EB6F1E56A1BC00583B90 /* Email.swift */; };
 		D6C5EB731E56A37800583B90 /* EmailSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5EB721E56A37800583B90 /* EmailSpecs.swift */; };
+		D6C5EB761E56D8BF00583B90 /* testExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5EB751E56D8BF00583B90 /* testExample.swift */; };
 		D6F069A21E559C73002EB412 /* MockGIDGoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F069A11E559C73002EB412 /* MockGIDGoogleUser.swift */; };
 		D6F069A41E559C91002EB412 /* MockGIDProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F069A31E559C91002EB412 /* MockGIDProfileData.swift */; };
 		D6F069A81E559D2B002EB412 /* MockGoogleSignInProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F069A71E559D2B002EB412 /* MockGoogleSignInProvider.swift */; };
@@ -115,6 +116,8 @@
 		D6C5EB6C1E561C5800583B90 /* BooksListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BooksListViewController.xib; sourceTree = "<group>"; };
 		D6C5EB6F1E56A1BC00583B90 /* Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 		D6C5EB721E56A37800583B90 /* EmailSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSpecs.swift; sourceTree = "<group>"; };
+		D6C5EB741E56D8BF00583B90 /* booklendingUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "booklendingUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6C5EB751E56D8BF00583B90 /* testExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testExample.swift; sourceTree = "<group>"; };
 		D6F069A11E559C73002EB412 /* MockGIDGoogleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGIDGoogleUser.swift; sourceTree = "<group>"; };
 		D6F069A31E559C91002EB412 /* MockGIDProfileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGIDProfileData.swift; sourceTree = "<group>"; };
 		D6F069A71E559D2B002EB412 /* MockGoogleSignInProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockGoogleSignInProvider.swift; sourceTree = "<group>"; };
@@ -307,6 +310,8 @@
 			isa = PBXGroup;
 			children = (
 				D63550E51E51AA4100C0EE3D /* Info.plist */,
+				D6C5EB751E56D8BF00583B90 /* testExample.swift */,
+				D6C5EB741E56D8BF00583B90 /* booklendingUITests-Bridging-Header.h */,
 			);
 			path = booklendingUITests;
 			sourceTree = "<group>";
@@ -587,6 +592,7 @@
 					D63550DE1E51AA4100C0EE3D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Q47BC9T672;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D63550BF1E51AA4100C0EE3D;
 					};
@@ -833,6 +839,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C5EB761E56D8BF00583B90 /* testExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,11 +1048,14 @@
 			baseConfigurationReference = FA49431F670A5BDC9A0B7B9A /* Pods-booklendingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Q47BC9T672;
 				INFOPLIST_FILE = booklendingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklendingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "booklendingUITests/booklendingUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = booklending;
 			};
@@ -1056,11 +1066,13 @@
 			baseConfigurationReference = 4900CC68FF7C707BF8671A35 /* Pods-booklendingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Q47BC9T672;
 				INFOPLIST_FILE = booklendingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklendingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "booklendingUITests/booklendingUITests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = booklending;
 			};
