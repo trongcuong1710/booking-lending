@@ -41,7 +41,7 @@ extension GoogleAuthenticationService: GIDSignInDelegate {
         let email = user.profile.email
         let user = User(email: email!)
         self.promise.fulfill(user)
-        
+        self.provider.signOut()
     }
 }
 
