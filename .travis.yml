@@ -16,9 +16,10 @@ notifications:
 
 before_install:
 #- rvm install ruby-2.4.0
+- gem install bundler --no-ri --no-rdoc --no-document
 - rvm --default use ruby-2.3.0
 - pod repo update --silent
-#- bundle install
+- bundle install
 #- pod repo update
 
 script:
