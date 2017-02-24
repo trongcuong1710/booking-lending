@@ -258,6 +258,7 @@
 				TargetAttributes = {
 					D63550BF1E51AA4100C0EE3D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L4B22PG56B;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
@@ -620,13 +621,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED7C7B36F71D97A72880F6B0 /* Pods-booklending.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = L4B22PG56B;
 				INFOPLIST_FILE = booklending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklending;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "839afd80-4fba-40f8-8e60-f1e4306a5aa1";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
 				SWIFT_OBJC_BRIDGING_HEADER = "booklending/booklending-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -637,13 +642,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B4FCD6F738D9D901649BA0F /* Pods-booklending.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = L4B22PG56B;
 				INFOPLIST_FILE = booklending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklending;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "839afd80-4fba-40f8-8e60-f1e4306a5aa1";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
 				SWIFT_OBJC_BRIDGING_HEADER = "booklending/booklending-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
