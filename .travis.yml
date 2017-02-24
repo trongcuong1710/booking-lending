@@ -16,11 +16,11 @@ notifications:
       - "Build %{build_number}"
       - "Detail at %{build_url}"
 
-
 before_install:
-- gem install bundler --no-ri --no-rdoc --no-document
 - rvm --default use ruby-2.3.0
-- pod repo update --silent
+
+install:
+- pod repo update --silent  
 
 script:
 - fastlane test
