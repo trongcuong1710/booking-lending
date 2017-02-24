@@ -1,7 +1,7 @@
 language: objective-c
-cache: 
-  - bundler
-  - cocoapods
+cache:
+- bundler
+- cocoapods
 osx_image: xcode8.2
 
 branches:
@@ -23,6 +23,8 @@ before_install:
 
 install:
 - pod repo update --silent  
+- bundle install
+- pod install
 
 script:
 - fastlane test
