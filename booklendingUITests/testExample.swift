@@ -1,14 +1,14 @@
 //
-//  booklendingUITests.swift
-//  booklendingUITests
+//  testExample.swift
+//  booklending
 //
-//  Created by Cuong Doan on 2/13/17.
+//  Created by Cuong Doan on 2/17/17.
 //  Copyright © 2017 Cuong Doan. All rights reserved.
 //
 
 import XCTest
 
-class booklendingUITests: XCTestCase {
+class testExample: XCTestCase {
         
     override func setUp() {
         super.setUp()

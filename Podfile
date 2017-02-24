@@ -6,6 +6,8 @@ target 'booklending' do
   use_frameworks!
 
   pod 'Google/SignIn'
+  pod 'PromiseKit', '~> 4.0'
+  pod 'UIAlertController+Blocks'
 
   target 'booklendingTests' do
     inherit! :search_paths

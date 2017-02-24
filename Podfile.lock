@@ -45,13 +45,27 @@ PODS:
     - KIF/Core (= 3.5.1)
   - KIF/Core (3.5.1)
   - Nimble (5.1.1)
+  - PromiseKit (4.1.7):
+    - PromiseKit/Foundation (= 4.1.7)
+    - PromiseKit/QuartzCore (= 4.1.7)
+    - PromiseKit/UIKit (= 4.1.7)
+  - PromiseKit/CorePromise (4.1.7)
+  - PromiseKit/Foundation (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.1.7):
+    - PromiseKit/CorePromise
   - Quick (1.0.0)
+  - UIAlertController+Blocks (0.9.2)
 
 DEPENDENCIES:
   - Google/SignIn
   - KIF
   - Nimble
+  - PromiseKit (~> 4.0)
   - Quick
+  - UIAlertController+Blocks
 
 SPEC CHECKSUMS:
   FirebaseAnalytics: 9c67af0ebeb8d2146c9b4ea2616439affa947b58
@@ -67,8 +81,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   KIF: '082eb65279e51c3092923802849eb796a04982ab'
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  PromiseKit: 779f2e41faf62d854e7593026ddbcb0bb5c5002d
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  UIAlertController+Blocks: 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
 
-PODFILE CHECKSUM: abb898b385525b94b7f96acdecfcdc63c843c3a9
+PODFILE CHECKSUM: 31903497e9cdf136fb4fffef8aebd40f34ddb223
 
 COCOAPODS: 1.1.1
