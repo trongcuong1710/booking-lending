@@ -146,6 +146,9 @@ GEM
     multipart-post (2.0.0)
     nanaimo (0.2.3)
     nap (1.1.0)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (4.0.1)
     netrc (0.7.8)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
@@ -208,6 +211,7 @@ DEPENDENCIES
   fastlane
   fastlane-plugin-versioning
   gym
+  net-sftp
   nokogiri
   scan
   xcov
