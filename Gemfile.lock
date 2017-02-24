@@ -93,6 +93,7 @@ GEM
       xcodeproj (>= 0.20, < 2.0.0)
       xcpretty (>= 0.2.4, < 1.0.0)
       xcpretty-travis-formatter (>= 0.0.3)
+    fastlane-plugin-versioning (0.2.5)
     fourflusher (2.0.1)
     fuzzy_match (2.0.4)
     gh_inspector (1.0.3)
@@ -202,6 +203,7 @@ PLATFORMS
 DEPENDENCIES
   cocoapods (= 1.1.1)
   fastlane
+  fastlane-plugin-versioning
   gym
   scan
   xcov
