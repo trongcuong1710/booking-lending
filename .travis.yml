@@ -21,8 +21,6 @@ notifications:
 before_install:
 - rvm --default use ruby-2.3.0
 - gem install bundler --no-ri --no-rdoc --no-document
-
-install:
 - pod repo update --silent
 
 script:
