@@ -1,0 +1,5 @@
+clean true
+export_options(
+  	method: "enterprise",
+  	compileBitcode: false
+)

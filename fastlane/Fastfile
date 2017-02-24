@@ -37,6 +37,36 @@ platform :ios do
     )
   end
 
+  lane :release do |options|
+    app_version     = get_version_number_from_plist
+    build_version   = options[:build_number]
+    app_identifier  = "vn.siliconstraits.bookslending"
+    path            = File.expand_path("./../build/")
+    ipa_file_name   = "bookslending(#{app_version}-#{build_version}).ipa"
+    plist_file_name = "bookslending(#{app_version}-#{build_version}).plist"
+    upload_location = "web/apps/apps/bookslending/"
+    plist_url       = "https://mobile.siliconstraits.vn/apps/apps/bookslending/bookslending.plist"
+    ipa_url         = "https://mobile.siliconstraits.vn/apps/apps/bookslending/bookslending.ipa"
+    gym(
+      scheme: "booklending",
+      output_directory: "#{path}",
+      output_name: "#{ipa_file_name}"
+    )
+
+    # Generate plist file
+    sh "ruby plist_generator.rb -i #{app_identifier} -b 1 -o #{Shellwords.escape(File.join(path, plist_file_name))} -u #{ipa_url} -n Book\ Lending"
+
+    # Upload plist file  
+    sh "ruby upload.rb -l #{Shellwords.escape(File.join(path, plist_file_name))} -r #{upload_location}bookslending.plist"
+
+    #upload ipa file
+    sh "ruby upload.rb -l #{Shellwords.escape(File.join(path, ipa_file_name))} -r #{upload_location}bookslending.ipa"
+    
+    slack(
+      message: "Version #{app_version} has been released. Download the build from [here](itms-services://?action=download-manifest&url=#{plist_url})"
+    )
+  end
+
   error do |lane, exception|
     slack(
       message: exception.message,
