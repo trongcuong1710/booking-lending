@@ -975,7 +975,7 @@
 				DEVELOPMENT_TEAM = L4B22PG56B;
 				INFOPLIST_FILE = booklending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklending;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.bookslending;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "839afd80-4fba-40f8-8e60-f1e4306a5aa1";
 				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
@@ -994,13 +994,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = L4B22PG56B;
+				DEVELOPMENT_TEAM = Q47BC9T672;
 				INFOPLIST_FILE = booklending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.booklending;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.siliconstraits.bookslending;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "839afd80-4fba-40f8-8e60-f1e4306a5aa1";
-				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
+				PROVISIONING_PROFILE = "55ebed7d-fafb-49f1-8317-e29d27cd6064";
+				PROVISIONING_PROFILE_SPECIFIER = "Books Lending Enterprise";
 				SWIFT_OBJC_BRIDGING_HEADER = "booklending/booklending-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
