@@ -24,3 +24,9 @@ install:
 
 script:
 - fastlane test
+
+deploy:
+  provider: script
+  script: fastlane release build_number:$TRAVIS_JOB_NUMBER
+  on:
+    branch: staging
